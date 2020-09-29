@@ -33,7 +33,6 @@ services:
       - tools
 networks:
   tools:
-    name: tools
 volumes:
   jenkins_home:
   nexus-data:
