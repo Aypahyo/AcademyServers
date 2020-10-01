@@ -18,21 +18,26 @@ services:
     image: sonatype/nexus3:latest
     networks:
       - tools
-    volumes: 
+    volumes:
       - nexus-data:/nexus-data
   sonaqube:
     image: sonarqube:latest
     networks:
       - tools
   nginx:
-    build: tomcat
-    ports: 
+    build: nginx
+    ports:
       - 80:80
       - 443:443
     networks:
       - tools
 networks:
   tools:
+    name: tools
 volumes:
   jenkins_home:
+    name: jenkins_home
+    external: true
   nexus-data:
+    name: nexus-data
+    external: true
