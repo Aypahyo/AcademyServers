@@ -33,7 +33,13 @@ services:
       - tools
 networks:
   tools:
-    name: tools
+#    name: tools
+# naming the tools network seems to be unsupported on my remote machine
+# docker-compose version 1.17.1, build unknown
+# docker-py version: 2.5.1
+# CPython version: 2.7.17
+# OpenSSL version: OpenSSL 1.1.1  11 Sep 2018 
+
 volumes:
   jenkins_home:
     name: jenkins_home
