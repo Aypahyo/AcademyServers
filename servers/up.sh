@@ -9,6 +9,9 @@ sysctl -w fs.file-max=65536
 ulimit -n 65536
 ulimit -u 4096
 
+echo setting my server info
+sed 's/server1.your.domain/23.97.228.226/g' nginx/nginx.conf -i
+
 echo compose things
 docker-compose up -d
 
