@@ -2,6 +2,8 @@ version: "2.1"
 services:
   jenkins:
     build: jenkins
+    ports:
+      - 8080:8080
     volumes:
       - jenkins_home:/var/jenkins_home
       - /usr/bin/docker:/usr/bin/docker
