@@ -13,5 +13,5 @@ echo setting my server info
 sed 's/server1.your.domain/23.97.228.226/g' nginx/nginx.conf -i
 
 echo compose things
-docker-compose up -d
+docker-compose up -d --build
 
