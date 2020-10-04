@@ -43,7 +43,7 @@ networks:
 volumes:
   jenkins_home:
     name: jenkins_home
-    external: true
+    #external: true
   nexus-data:
     name: nexus-data
-    external: true
+    #external: true
